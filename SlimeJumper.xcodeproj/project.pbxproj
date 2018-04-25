@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55279DCD207EA19D00D5EABB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55279DCC207EA19D00D5EABB /* GoogleService-Info.plist */; };
+		55279DCF207EA4A300D5EABB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55279DCE207EA4A200D5EABB /* libicucore.tbd */; };
+		55279DD1207EA4BB00D5EABB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55279DD0207EA4BA00D5EABB /* libsqlite3.tbd */; };
+		5527D32A207BCFDF00C64D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D329207BCFDF00C64D77 /* AppDelegate.swift */; };
+		5527D32E207BCFDF00C64D77 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5527D32D207BCFDF00C64D77 /* Actions.sks */; };
+		5527D330207BCFDF00C64D77 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D32F207BCFDF00C64D77 /* GameScene.swift */; };
+		5527D332207BCFDF00C64D77 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D331207BCFDF00C64D77 /* GameViewController.swift */; };
+		5527D335207BCFDF00C64D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5527D333207BCFDF00C64D77 /* Main.storyboard */; };
+		5527D337207BCFDF00C64D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5527D336207BCFDF00C64D77 /* Assets.xcassets */; };
+		5527D33A207BCFDF00C64D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5527D338207BCFDF00C64D77 /* LaunchScreen.storyboard */; };
+		5527D345207BCFDF00C64D77 /* SlimeJumperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D344207BCFDF00C64D77 /* SlimeJumperTests.swift */; };
+		5527D350207BCFDF00C64D77 /* SlimeJumperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D34F207BCFDF00C64D77 /* SlimeJumperUITests.swift */; };
+		5527D360207BD3A000C64D77 /* Level01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5527D35F207BD39F00C64D77 /* Level01.plist */; };
+		5527D362207BD3E800C64D77 /* GameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D361207BD3E800C64D77 /* GameElements.swift */; };
+		5527D3E3207BDB4E00C64D77 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D364207BDB4D00C64D77 /* Background.png */; };
+		5527D3E4207BDB4E00C64D77 /* Background01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D365207BDB4D00C64D77 /* Background01.png */; };
+		5527D3E5207BDB4E00C64D77 /* Background01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D366207BDB4D00C64D77 /* Background01@2x.png */; };
+		5527D3E6207BDB4E00C64D77 /* Background02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D367207BDB4D00C64D77 /* Background02.png */; };
+		5527D3E7207BDB4E00C64D77 /* Background02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D368207BDB4D00C64D77 /* Background02@2x.png */; };
+		5527D3E8207BDB4E00C64D77 /* Background03.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D369207BDB4D00C64D77 /* Background03.png */; };
+		5527D3E9207BDB4E00C64D77 /* Background03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D36A207BDB4D00C64D77 /* Background03@2x.png */; };
+		5527D3EA207BDB4E00C64D77 /* Background04.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D36B207BDB4D00C64D77 /* Background04.png */; };
+		5527D3EB207BDB4E00C64D77 /* Background04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D36C207BDB4E00C64D77 /* Background04@2x.png */; };
+		5527D3EC207BDB4E00C64D77 /* Background05.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D36D207BDB4E00C64D77 /* Background05.png */; };
+		5527D3ED207BDB4E00C64D77 /* Background05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D36E207BDB4E00C64D77 /* Background05@2x.png */; };
+		5527D3EE207BDB4E00C64D77 /* Background06.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D36F207BDB4E00C64D77 /* Background06.png */; };
+		5527D3EF207BDB4E00C64D77 /* Background06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D370207BDB4E00C64D77 /* Background06@2x.png */; };
+		5527D3F0207BDB4E00C64D77 /* Background07.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D371207BDB4E00C64D77 /* Background07.png */; };
+		5527D3F1207BDB4E00C64D77 /* Background07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D372207BDB4E00C64D77 /* Background07@2x.png */; };
+		5527D3F2207BDB4E00C64D77 /* Background08.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D373207BDB4E00C64D77 /* Background08.png */; };
+		5527D3F3207BDB4E00C64D77 /* Background08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D374207BDB4E00C64D77 /* Background08@2x.png */; };
+		5527D3F4207BDB4E00C64D77 /* Background09.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D375207BDB4E00C64D77 /* Background09.png */; };
+		5527D3F5207BDB4E00C64D77 /* Background09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D376207BDB4E00C64D77 /* Background09@2x.png */; };
+		5527D3F6207BDB4E00C64D77 /* Background10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D377207BDB4E00C64D77 /* Background10.png */; };
+		5527D3F7207BDB4E00C64D77 /* Background10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D378207BDB4E00C64D77 /* Background10@2x.png */; };
+		5527D3F8207BDB4E00C64D77 /* Background11.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D379207BDB4E00C64D77 /* Background11.png */; };
+		5527D3F9207BDB4E00C64D77 /* Background11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D37A207BDB4E00C64D77 /* Background11@2x.png */; };
+		5527D3FA207BDB4E00C64D77 /* Background12.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D37B207BDB4E00C64D77 /* Background12.png */; };
+		5527D3FB207BDB4E00C64D77 /* Background12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D37C207BDB4E00C64D77 /* Background12@2x.png */; };
+		5527D3FC207BDB4E00C64D77 /* Background13.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D37D207BDB4E00C64D77 /* Background13.png */; };
+		5527D3FD207BDB4E00C64D77 /* Background13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D37E207BDB4E00C64D77 /* Background13@2x.png */; };
+		5527D3FE207BDB4E00C64D77 /* Background14.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D37F207BDB4E00C64D77 /* Background14.png */; };
+		5527D3FF207BDB4E00C64D77 /* Background14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D380207BDB4E00C64D77 /* Background14@2x.png */; };
+		5527D400207BDB4E00C64D77 /* Background15.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D381207BDB4E00C64D77 /* Background15.png */; };
+		5527D401207BDB4E00C64D77 /* Background15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D382207BDB4E00C64D77 /* Background15@2x.png */; };
+		5527D402207BDB4E00C64D77 /* Background16.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D383207BDB4E00C64D77 /* Background16.png */; };
+		5527D403207BDB4E00C64D77 /* Background16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D384207BDB4E00C64D77 /* Background16@2x.png */; };
+		5527D404207BDB4E00C64D77 /* Background17.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D385207BDB4E00C64D77 /* Background17.png */; };
+		5527D405207BDB4E00C64D77 /* Background17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D386207BDB4E00C64D77 /* Background17@2x.png */; };
+		5527D406207BDB4E00C64D77 /* Background18.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D387207BDB4E00C64D77 /* Background18.png */; };
+		5527D407207BDB4E00C64D77 /* Background18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D388207BDB4E00C64D77 /* Background18@2x.png */; };
+		5527D408207BDB4E00C64D77 /* Background19.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D389207BDB4E00C64D77 /* Background19.png */; };
+		5527D409207BDB4E00C64D77 /* Background19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D38A207BDB4E00C64D77 /* Background19@2x.png */; };
+		5527D40A207BDB4E00C64D77 /* Background20.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D38B207BDB4E00C64D77 /* Background20.png */; };
+		5527D40B207BDB4E00C64D77 /* Background20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D38C207BDB4E00C64D77 /* Background20@2x.png */; };
+		5527D40C207BDB4E00C64D77 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5527D38D207BDB4E00C64D77 /* Background@2x.png */; };
+		5527D40E207BDDE100C64D77 /* GenericNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D40D207BDDE100C64D77 /* GenericNode.swift */; };
+		5527D410207BDF3500C64D77 /* PlatformNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D40F207BDF3500C64D77 /* PlatformNode.swift */; };
+		5527D412207BE0CB00C64D77 /* SlimeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D411207BE0CB00C64D77 /* SlimeNode.swift */; };
+		5527D418207BEDED00C64D77 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D417207BEDED00C64D77 /* AdSupport.framework */; };
+		5527D41A207BEDFC00C64D77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D419207BEDFB00C64D77 /* AudioToolbox.framework */; };
+		5527D41C207BEE0A00C64D77 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D41B207BEE0900C64D77 /* AVFoundation.framework */; };
+		5527D41E207BEE1E00C64D77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D41D207BEE1E00C64D77 /* CoreGraphics.framework */; };
+		5527D420207BEE2C00C64D77 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D41F207BEE2C00C64D77 /* CoreTelephony.framework */; };
+		5527D422207BEE3400C64D77 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D421207BEE3400C64D77 /* EventKit.framework */; };
+		5527D424207BEE3B00C64D77 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D423207BEE3A00C64D77 /* EventKitUI.framework */; };
+		5527D426207BEE4200C64D77 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D425207BEE4200C64D77 /* StoreKit.framework */; };
+		5527D428207BEE4900C64D77 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D427207BEE4800C64D77 /* SystemConfiguration.framework */; };
+		5527D42A207BEEA800C64D77 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5527D429207BEEA700C64D77 /* GoogleMobileAds.framework */; };
+		55317B6D2091118B0016A446 /* Slime.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 55317B6C2091118B0016A446 /* Slime.atlas */; };
+		D221D80D208FBB1300175D75 /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221D80C208FBB1300175D75 /* GameHandler.swift */; };
+		D221D80F208FF83F00175D75 /* EndGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221D80E208FF83F00175D75 /* EndGame.swift */; };
+		D221D812208FFD9D00175D75 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D221D811208FFD9D00175D75 /* MainMenuScene.sks */; };
+		D221D816208FFE0400175D75 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221D815208FFE0400175D75 /* MainMenuScene.swift */; };
+		D255FC632090719B000EFB92 /* Lava.sks in Resources */ = {isa = PBXBuildFile; fileRef = D255FC622090719A000EFB92 /* Lava.sks */; };
+		D255FC672090E069000EFB92 /* Slime.sks in Resources */ = {isa = PBXBuildFile; fileRef = D255FC662090E068000EFB92 /* Slime.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5527D341207BCFDF00C64D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5527D31E207BCFDF00C64D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5527D325207BCFDF00C64D77;
+			remoteInfo = SlimeJumper;
+		};
+		5527D34C207BCFDF00C64D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5527D31E207BCFDF00C64D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5527D325207BCFDF00C64D77;
+			remoteInfo = SlimeJumper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55279DCC207EA19D00D5EABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55279DCE207EA4A200D5EABB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		55279DD0207EA4BA00D5EABB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5527D326207BCFDF00C64D77 /* SlimeJumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimeJumper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5527D329207BCFDF00C64D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5527D32D207BCFDF00C64D77 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		5527D32F207BCFDF00C64D77 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5527D331207BCFDF00C64D77 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5527D334207BCFDF00C64D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5527D336207BCFDF00C64D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5527D339207BCFDF00C64D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5527D33B207BCFDF00C64D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5527D340207BCFDF00C64D77 /* SlimeJumperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlimeJumperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5527D344207BCFDF00C64D77 /* SlimeJumperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimeJumperTests.swift; sourceTree = "<group>"; };
+		5527D346207BCFDF00C64D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5527D34B207BCFDF00C64D77 /* SlimeJumperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlimeJumperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5527D34F207BCFDF00C64D77 /* SlimeJumperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimeJumperUITests.swift; sourceTree = "<group>"; };
+		5527D351207BCFDF00C64D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5527D35F207BD39F00C64D77 /* Level01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level01.plist; sourceTree = "<group>"; };
+		5527D361207BD3E800C64D77 /* GameElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameElements.swift; sourceTree = "<group>"; };
+		5527D364207BDB4D00C64D77 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		5527D365207BDB4D00C64D77 /* Background01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background01.png; sourceTree = "<group>"; };
+		5527D366207BDB4D00C64D77 /* Background01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background01@2x.png"; sourceTree = "<group>"; };
+		5527D367207BDB4D00C64D77 /* Background02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background02.png; sourceTree = "<group>"; };
+		5527D368207BDB4D00C64D77 /* Background02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background02@2x.png"; sourceTree = "<group>"; };
+		5527D369207BDB4D00C64D77 /* Background03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background03.png; sourceTree = "<group>"; };
+		5527D36A207BDB4D00C64D77 /* Background03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background03@2x.png"; sourceTree = "<group>"; };
+		5527D36B207BDB4D00C64D77 /* Background04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background04.png; sourceTree = "<group>"; };
+		5527D36C207BDB4E00C64D77 /* Background04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background04@2x.png"; sourceTree = "<group>"; };
+		5527D36D207BDB4E00C64D77 /* Background05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background05.png; sourceTree = "<group>"; };
+		5527D36E207BDB4E00C64D77 /* Background05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background05@2x.png"; sourceTree = "<group>"; };
+		5527D36F207BDB4E00C64D77 /* Background06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background06.png; sourceTree = "<group>"; };
+		5527D370207BDB4E00C64D77 /* Background06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background06@2x.png"; sourceTree = "<group>"; };
+		5527D371207BDB4E00C64D77 /* Background07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background07.png; sourceTree = "<group>"; };
+		5527D372207BDB4E00C64D77 /* Background07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background07@2x.png"; sourceTree = "<group>"; };
+		5527D373207BDB4E00C64D77 /* Background08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background08.png; sourceTree = "<group>"; };
+		5527D374207BDB4E00C64D77 /* Background08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background08@2x.png"; sourceTree = "<group>"; };
+		5527D375207BDB4E00C64D77 /* Background09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background09.png; sourceTree = "<group>"; };
+		5527D376207BDB4E00C64D77 /* Background09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background09@2x.png"; sourceTree = "<group>"; };
+		5527D377207BDB4E00C64D77 /* Background10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background10.png; sourceTree = "<group>"; };
+		5527D378207BDB4E00C64D77 /* Background10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background10@2x.png"; sourceTree = "<group>"; };
+		5527D379207BDB4E00C64D77 /* Background11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background11.png; sourceTree = "<group>"; };
+		5527D37A207BDB4E00C64D77 /* Background11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background11@2x.png"; sourceTree = "<group>"; };
+		5527D37B207BDB4E00C64D77 /* Background12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background12.png; sourceTree = "<group>"; };
+		5527D37C207BDB4E00C64D77 /* Background12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background12@2x.png"; sourceTree = "<group>"; };
+		5527D37D207BDB4E00C64D77 /* Background13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background13.png; sourceTree = "<group>"; };
+		5527D37E207BDB4E00C64D77 /* Background13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background13@2x.png"; sourceTree = "<group>"; };
+		5527D37F207BDB4E00C64D77 /* Background14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background14.png; sourceTree = "<group>"; };
+		5527D380207BDB4E00C64D77 /* Background14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background14@2x.png"; sourceTree = "<group>"; };
+		5527D381207BDB4E00C64D77 /* Background15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background15.png; sourceTree = "<group>"; };
+		5527D382207BDB4E00C64D77 /* Background15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background15@2x.png"; sourceTree = "<group>"; };
+		5527D383207BDB4E00C64D77 /* Background16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background16.png; sourceTree = "<group>"; };
+		5527D384207BDB4E00C64D77 /* Background16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background16@2x.png"; sourceTree = "<group>"; };
+		5527D385207BDB4E00C64D77 /* Background17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background17.png; sourceTree = "<group>"; };
+		5527D386207BDB4E00C64D77 /* Background17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background17@2x.png"; sourceTree = "<group>"; };
+		5527D387207BDB4E00C64D77 /* Background18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background18.png; sourceTree = "<group>"; };
+		5527D388207BDB4E00C64D77 /* Background18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background18@2x.png"; sourceTree = "<group>"; };
+		5527D389207BDB4E00C64D77 /* Background19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background19.png; sourceTree = "<group>"; };
+		5527D38A207BDB4E00C64D77 /* Background19@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background19@2x.png"; sourceTree = "<group>"; };
+		5527D38B207BDB4E00C64D77 /* Background20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background20.png; sourceTree = "<group>"; };
+		5527D38C207BDB4E00C64D77 /* Background20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background20@2x.png"; sourceTree = "<group>"; };
+		5527D38D207BDB4E00C64D77 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		5527D40D207BDDE100C64D77 /* GenericNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNode.swift; sourceTree = "<group>"; };
+		5527D40F207BDF3500C64D77 /* PlatformNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformNode.swift; sourceTree = "<group>"; };
+		5527D411207BE0CB00C64D77 /* SlimeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimeNode.swift; sourceTree = "<group>"; };
+		5527D417207BEDED00C64D77 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5527D419207BEDFB00C64D77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5527D41B207BEE0900C64D77 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5527D41D207BEE1E00C64D77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5527D41F207BEE2C00C64D77 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5527D421207BEE3400C64D77 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		5527D423207BEE3A00C64D77 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		5527D425207BEE4200C64D77 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5527D427207BEE4800C64D77 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5527D429207BEEA700C64D77 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		55317B6C2091118B0016A446 /* Slime.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Slime.atlas; sourceTree = "<group>"; };
+		D221D80C208FBB1300175D75 /* GameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
+		D221D80E208FF83F00175D75 /* EndGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGame.swift; sourceTree = "<group>"; };
+		D221D811208FFD9D00175D75 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
+		D221D815208FFE0400175D75 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		D255FC622090719A000EFB92 /* Lava.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Lava.sks; sourceTree = "<group>"; };
+		D255FC662090E068000EFB92 /* Slime.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Slime.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5527D323207BCFDF00C64D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55279DD1207EA4BB00D5EABB /* libsqlite3.tbd in Frameworks */,
+				5527D426207BEE4200C64D77 /* StoreKit.framework in Frameworks */,
+				55279DCF207EA4A300D5EABB /* libicucore.tbd in Frameworks */,
+				5527D42A207BEEA800C64D77 /* GoogleMobileAds.framework in Frameworks */,
+				5527D428207BEE4900C64D77 /* SystemConfiguration.framework in Frameworks */,
+				5527D424207BEE3B00C64D77 /* EventKitUI.framework in Frameworks */,
+				5527D422207BEE3400C64D77 /* EventKit.framework in Frameworks */,
+				5527D420207BEE2C00C64D77 /* CoreTelephony.framework in Frameworks */,
+				5527D41E207BEE1E00C64D77 /* CoreGraphics.framework in Frameworks */,
+				5527D41C207BEE0A00C64D77 /* AVFoundation.framework in Frameworks */,
+				5527D41A207BEDFC00C64D77 /* AudioToolbox.framework in Frameworks */,
+				5527D418207BEDED00C64D77 /* AdSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5527D33D207BCFDF00C64D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5527D348207BCFDF00C64D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5527D31D207BCFDF00C64D77 = {
+			isa = PBXGroup;
+			children = (
+				5527D328207BCFDF00C64D77 /* SlimeJumper */,
+				5527D343207BCFDF00C64D77 /* SlimeJumperTests */,
+				5527D34E207BCFDF00C64D77 /* SlimeJumperUITests */,
+				5527D327207BCFDF00C64D77 /* Products */,
+				5527D413207BED3E00C64D77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5527D327207BCFDF00C64D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5527D326207BCFDF00C64D77 /* SlimeJumper.app */,
+				5527D340207BCFDF00C64D77 /* SlimeJumperTests.xctest */,
+				5527D34B207BCFDF00C64D77 /* SlimeJumperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5527D328207BCFDF00C64D77 /* SlimeJumper */ = {
+			isa = PBXGroup;
+			children = (
+				5527D33B207BCFDF00C64D77 /* Info.plist */,
+				D2FADFAB20906C2100071914 /* Particles */,
+				D2FADFAA20906BFB00071914 /* pLists */,
+				D2FADFA920906BCE00071914 /* Elements */,
+				D2FADFA820906BB400071914 /* Handlers */,
+				D2FADFA720906B7F00071914 /* Controllers */,
+				D2FADFA620906B7600071914 /* Nodes */,
+				D221D813208FFDC100175D75 /* Classes */,
+				D221D810208FFD7100175D75 /* Scenes */,
+				5527D363207BDB4D00C64D77 /* Backgrounds */,
+				5527D329207BCFDF00C64D77 /* AppDelegate.swift */,
+				D221D80E208FF83F00175D75 /* EndGame.swift */,
+				5527D333207BCFDF00C64D77 /* Main.storyboard */,
+				5527D336207BCFDF00C64D77 /* Assets.xcassets */,
+				5527D338207BCFDF00C64D77 /* LaunchScreen.storyboard */,
+			);
+			path = SlimeJumper;
+			sourceTree = "<group>";
+		};
+		5527D343207BCFDF00C64D77 /* SlimeJumperTests */ = {
+			isa = PBXGroup;
+			children = (
+				5527D344207BCFDF00C64D77 /* SlimeJumperTests.swift */,
+				5527D346207BCFDF00C64D77 /* Info.plist */,
+			);
+			path = SlimeJumperTests;
+			sourceTree = "<group>";
+		};
+		5527D34E207BCFDF00C64D77 /* SlimeJumperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5527D34F207BCFDF00C64D77 /* SlimeJumperUITests.swift */,
+				5527D351207BCFDF00C64D77 /* Info.plist */,
+			);
+			path = SlimeJumperUITests;
+			sourceTree = "<group>";
+		};
+		5527D363207BDB4D00C64D77 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				55317B6C2091118B0016A446 /* Slime.atlas */,
+				5527D364207BDB4D00C64D77 /* Background.png */,
+				5527D365207BDB4D00C64D77 /* Background01.png */,
+				5527D366207BDB4D00C64D77 /* Background01@2x.png */,
+				5527D367207BDB4D00C64D77 /* Background02.png */,
+				5527D368207BDB4D00C64D77 /* Background02@2x.png */,
+				5527D369207BDB4D00C64D77 /* Background03.png */,
+				5527D36A207BDB4D00C64D77 /* Background03@2x.png */,
+				5527D36B207BDB4D00C64D77 /* Background04.png */,
+				5527D36C207BDB4E00C64D77 /* Background04@2x.png */,
+				5527D36D207BDB4E00C64D77 /* Background05.png */,
+				5527D36E207BDB4E00C64D77 /* Background05@2x.png */,
+				5527D36F207BDB4E00C64D77 /* Background06.png */,
+				5527D370207BDB4E00C64D77 /* Background06@2x.png */,
+				5527D371207BDB4E00C64D77 /* Background07.png */,
+				5527D372207BDB4E00C64D77 /* Background07@2x.png */,
+				5527D373207BDB4E00C64D77 /* Background08.png */,
+				5527D374207BDB4E00C64D77 /* Background08@2x.png */,
+				5527D375207BDB4E00C64D77 /* Background09.png */,
+				5527D376207BDB4E00C64D77 /* Background09@2x.png */,
+				5527D377207BDB4E00C64D77 /* Background10.png */,
+				5527D378207BDB4E00C64D77 /* Background10@2x.png */,
+				5527D379207BDB4E00C64D77 /* Background11.png */,
+				5527D37A207BDB4E00C64D77 /* Background11@2x.png */,
+				5527D37B207BDB4E00C64D77 /* Background12.png */,
+				5527D37C207BDB4E00C64D77 /* Background12@2x.png */,
+				5527D37D207BDB4E00C64D77 /* Background13.png */,
+				5527D37E207BDB4E00C64D77 /* Background13@2x.png */,
+				5527D37F207BDB4E00C64D77 /* Background14.png */,
+				5527D380207BDB4E00C64D77 /* Background14@2x.png */,
+				5527D381207BDB4E00C64D77 /* Background15.png */,
+				5527D382207BDB4E00C64D77 /* Background15@2x.png */,
+				5527D383207BDB4E00C64D77 /* Background16.png */,
+				5527D384207BDB4E00C64D77 /* Background16@2x.png */,
+				5527D385207BDB4E00C64D77 /* Background17.png */,
+				5527D386207BDB4E00C64D77 /* Background17@2x.png */,
+				5527D387207BDB4E00C64D77 /* Background18.png */,
+				5527D388207BDB4E00C64D77 /* Background18@2x.png */,
+				5527D389207BDB4E00C64D77 /* Background19.png */,
+				5527D38A207BDB4E00C64D77 /* Background19@2x.png */,
+				5527D38B207BDB4E00C64D77 /* Background20.png */,
+				5527D38C207BDB4E00C64D77 /* Background20@2x.png */,
+				5527D38D207BDB4E00C64D77 /* Background@2x.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		5527D413207BED3E00C64D77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55279DD0207EA4BA00D5EABB /* libsqlite3.tbd */,
+				55279DCE207EA4A200D5EABB /* libicucore.tbd */,
+				5527D429207BEEA700C64D77 /* GoogleMobileAds.framework */,
+				5527D427207BEE4800C64D77 /* SystemConfiguration.framework */,
+				5527D425207BEE4200C64D77 /* StoreKit.framework */,
+				5527D423207BEE3A00C64D77 /* EventKitUI.framework */,
+				5527D421207BEE3400C64D77 /* EventKit.framework */,
+				5527D41F207BEE2C00C64D77 /* CoreTelephony.framework */,
+				5527D41D207BEE1E00C64D77 /* CoreGraphics.framework */,
+				5527D41B207BEE0900C64D77 /* AVFoundation.framework */,
+				5527D419207BEDFB00C64D77 /* AudioToolbox.framework */,
+				5527D417207BEDED00C64D77 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D221D810208FFD7100175D75 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5527D32D207BCFDF00C64D77 /* Actions.sks */,
+				D221D811208FFD9D00175D75 /* MainMenuScene.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D221D813208FFDC100175D75 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D221D814208FFDCA00175D75 /* Scene Classes */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D221D814208FFDCA00175D75 /* Scene Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5527D32F207BCFDF00C64D77 /* GameScene.swift */,
+				D221D815208FFE0400175D75 /* MainMenuScene.swift */,
+			);
+			path = "Scene Classes";
+			sourceTree = "<group>";
+		};
+		D2FADFA620906B7600071914 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				5527D411207BE0CB00C64D77 /* SlimeNode.swift */,
+				5527D40D207BDDE100C64D77 /* GenericNode.swift */,
+				5527D40F207BDF3500C64D77 /* PlatformNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		D2FADFA720906B7F00071914 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5527D331207BCFDF00C64D77 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2FADFA820906BB400071914 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				D221D80C208FBB1300175D75 /* GameHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		D2FADFA920906BCE00071914 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5527D361207BD3E800C64D77 /* GameElements.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		D2FADFAA20906BFB00071914 /* pLists */ = {
+			isa = PBXGroup;
+			children = (
+				55279DCC207EA19D00D5EABB /* GoogleService-Info.plist */,
+				5527D35F207BD39F00C64D77 /* Level01.plist */,
+			);
+			path = pLists;
+			sourceTree = "<group>";
+		};
+		D2FADFAB20906C2100071914 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				D255FC662090E068000EFB92 /* Slime.sks */,
+				D255FC622090719A000EFB92 /* Lava.sks */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5527D325207BCFDF00C64D77 /* SlimeJumper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5527D354207BCFDF00C64D77 /* Build configuration list for PBXNativeTarget "SlimeJumper" */;
+			buildPhases = (
+				5527D322207BCFDF00C64D77 /* Sources */,
+				5527D323207BCFDF00C64D77 /* Frameworks */,
+				5527D324207BCFDF00C64D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlimeJumper;
+			productName = SlimeJumper;
+			productReference = 5527D326207BCFDF00C64D77 /* SlimeJumper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5527D33F207BCFDF00C64D77 /* SlimeJumperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5527D357207BCFDF00C64D77 /* Build configuration list for PBXNativeTarget "SlimeJumperTests" */;
+			buildPhases = (
+				5527D33C207BCFDF00C64D77 /* Sources */,
+				5527D33D207BCFDF00C64D77 /* Frameworks */,
+				5527D33E207BCFDF00C64D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5527D342207BCFDF00C64D77 /* PBXTargetDependency */,
+			);
+			name = SlimeJumperTests;
+			productName = SlimeJumperTests;
+			productReference = 5527D340207BCFDF00C64D77 /* SlimeJumperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5527D34A207BCFDF00C64D77 /* SlimeJumperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5527D35A207BCFDF00C64D77 /* Build configuration list for PBXNativeTarget "SlimeJumperUITests" */;
+			buildPhases = (
+				5527D347207BCFDF00C64D77 /* Sources */,
+				5527D348207BCFDF00C64D77 /* Frameworks */,
+				5527D349207BCFDF00C64D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5527D34D207BCFDF00C64D77 /* PBXTargetDependency */,
+			);
+			name = SlimeJumperUITests;
+			productName = SlimeJumperUITests;
+			productReference = 5527D34B207BCFDF00C64D77 /* SlimeJumperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5527D31E207BCFDF00C64D77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Kramarczyk Jessica N.";
+				TargetAttributes = {
+					5527D325207BCFDF00C64D77 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5527D33F207BCFDF00C64D77 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5527D325207BCFDF00C64D77;
+					};
+					5527D34A207BCFDF00C64D77 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5527D325207BCFDF00C64D77;
+					};
+				};
+			};
+			buildConfigurationList = 5527D321207BCFDF00C64D77 /* Build configuration list for PBXProject "SlimeJumper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5527D31D207BCFDF00C64D77;
+			productRefGroup = 5527D327207BCFDF00C64D77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5527D325207BCFDF00C64D77 /* SlimeJumper */,
+				5527D33F207BCFDF00C64D77 /* SlimeJumperTests */,
+				5527D34A207BCFDF00C64D77 /* SlimeJumperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5527D324207BCFDF00C64D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5527D3FA207BDB4E00C64D77 /* Background12.png in Resources */,
+				5527D3F2207BDB4E00C64D77 /* Background08.png in Resources */,
+				5527D3FC207BDB4E00C64D77 /* Background13.png in Resources */,
+				5527D40C207BDB4E00C64D77 /* Background@2x.png in Resources */,
+				5527D3F0207BDB4E00C64D77 /* Background07.png in Resources */,
+				5527D402207BDB4E00C64D77 /* Background16.png in Resources */,
+				5527D3E6207BDB4E00C64D77 /* Background02.png in Resources */,
+				5527D3E8207BDB4E00C64D77 /* Background03.png in Resources */,
+				5527D406207BDB4E00C64D77 /* Background18.png in Resources */,
+				55317B6D2091118B0016A446 /* Slime.atlas in Resources */,
+				5527D3E4207BDB4E00C64D77 /* Background01.png in Resources */,
+				5527D405207BDB4E00C64D77 /* Background17@2x.png in Resources */,
+				5527D335207BCFDF00C64D77 /* Main.storyboard in Resources */,
+				5527D360207BD3A000C64D77 /* Level01.plist in Resources */,
+				5527D3FD207BDB4E00C64D77 /* Background13@2x.png in Resources */,
+				5527D3EB207BDB4E00C64D77 /* Background04@2x.png in Resources */,
+				5527D409207BDB4E00C64D77 /* Background19@2x.png in Resources */,
+				5527D3F3207BDB4E00C64D77 /* Background08@2x.png in Resources */,
+				5527D3F7207BDB4E00C64D77 /* Background10@2x.png in Resources */,
+				5527D40A207BDB4E00C64D77 /* Background20.png in Resources */,
+				5527D3FB207BDB4E00C64D77 /* Background12@2x.png in Resources */,
+				5527D337207BCFDF00C64D77 /* Assets.xcassets in Resources */,
+				5527D3FE207BDB4E00C64D77 /* Background14.png in Resources */,
+				5527D3F6207BDB4E00C64D77 /* Background10.png in Resources */,
+				5527D3F8207BDB4E00C64D77 /* Background11.png in Resources */,
+				5527D3F5207BDB4E00C64D77 /* Background09@2x.png in Resources */,
+				5527D3E7207BDB4E00C64D77 /* Background02@2x.png in Resources */,
+				D221D812208FFD9D00175D75 /* MainMenuScene.sks in Resources */,
+				5527D3FF207BDB4E00C64D77 /* Background14@2x.png in Resources */,
+				5527D3E3207BDB4E00C64D77 /* Background.png in Resources */,
+				5527D404207BDB4E00C64D77 /* Background17.png in Resources */,
+				5527D3E9207BDB4E00C64D77 /* Background03@2x.png in Resources */,
+				5527D408207BDB4E00C64D77 /* Background19.png in Resources */,
+				5527D3E5207BDB4E00C64D77 /* Background01@2x.png in Resources */,
+				5527D400207BDB4E00C64D77 /* Background15.png in Resources */,
+				5527D3EF207BDB4E00C64D77 /* Background06@2x.png in Resources */,
+				5527D33A207BCFDF00C64D77 /* LaunchScreen.storyboard in Resources */,
+				D255FC632090719B000EFB92 /* Lava.sks in Resources */,
+				5527D3EE207BDB4E00C64D77 /* Background06.png in Resources */,
+				5527D3F1207BDB4E00C64D77 /* Background07@2x.png in Resources */,
+				5527D3ED207BDB4E00C64D77 /* Background05@2x.png in Resources */,
+				5527D3F4207BDB4E00C64D77 /* Background09.png in Resources */,
+				5527D403207BDB4E00C64D77 /* Background16@2x.png in Resources */,
+				5527D401207BDB4E00C64D77 /* Background15@2x.png in Resources */,
+				55279DCD207EA19D00D5EABB /* GoogleService-Info.plist in Resources */,
+				5527D407207BDB4E00C64D77 /* Background18@2x.png in Resources */,
+				D255FC672090E069000EFB92 /* Slime.sks in Resources */,
+				5527D3F9207BDB4E00C64D77 /* Background11@2x.png in Resources */,
+				5527D40B207BDB4E00C64D77 /* Background20@2x.png in Resources */,
+				5527D3EC207BDB4E00C64D77 /* Background05.png in Resources */,
+				5527D3EA207BDB4E00C64D77 /* Background04.png in Resources */,
+				5527D32E207BCFDF00C64D77 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5527D33E207BCFDF00C64D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5527D349207BCFDF00C64D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5527D322207BCFDF00C64D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D221D816208FFE0400175D75 /* MainMenuScene.swift in Sources */,
+				D221D80F208FF83F00175D75 /* EndGame.swift in Sources */,
+				5527D412207BE0CB00C64D77 /* SlimeNode.swift in Sources */,
+				5527D362207BD3E800C64D77 /* GameElements.swift in Sources */,
+				5527D330207BCFDF00C64D77 /* GameScene.swift in Sources */,
+				5527D332207BCFDF00C64D77 /* GameViewController.swift in Sources */,
+				D221D80D208FBB1300175D75 /* GameHandler.swift in Sources */,
+				5527D40E207BDDE100C64D77 /* GenericNode.swift in Sources */,
+				5527D410207BDF3500C64D77 /* PlatformNode.swift in Sources */,
+				5527D32A207BCFDF00C64D77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5527D33C207BCFDF00C64D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5527D345207BCFDF00C64D77 /* SlimeJumperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5527D347207BCFDF00C64D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5527D350207BCFDF00C64D77 /* SlimeJumperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5527D342207BCFDF00C64D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5527D325207BCFDF00C64D77 /* SlimeJumper */;
+			targetProxy = 5527D341207BCFDF00C64D77 /* PBXContainerItemProxy */;
+		};
+		5527D34D207BCFDF00C64D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5527D325207BCFDF00C64D77 /* SlimeJumper */;
+			targetProxy = 5527D34C207BCFDF00C64D77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5527D333207BCFDF00C64D77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5527D334207BCFDF00C64D77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5527D338207BCFDF00C64D77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5527D339207BCFDF00C64D77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5527D352207BCFDF00C64D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5527D353207BCFDF00C64D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5527D355207BCFDF00C64D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SlimeJumper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaK.SlimeJumper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5527D356207BCFDF00C64D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SlimeJumper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaK.SlimeJumper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5527D358207BCFDF00C64D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlimeJumperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaK.SlimeJumperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimeJumper.app/SlimeJumper";
+			};
+			name = Debug;
+		};
+		5527D359207BCFDF00C64D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlimeJumperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaK.SlimeJumperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimeJumper.app/SlimeJumper";
+			};
+			name = Release;
+		};
+		5527D35B207BCFDF00C64D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlimeJumperUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaK.SlimeJumperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlimeJumper;
+			};
+			name = Debug;
+		};
+		5527D35C207BCFDF00C64D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlimeJumperUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = JessicaK.SlimeJumperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlimeJumper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5527D321207BCFDF00C64D77 /* Build configuration list for PBXProject "SlimeJumper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5527D352207BCFDF00C64D77 /* Debug */,
+				5527D353207BCFDF00C64D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5527D354207BCFDF00C64D77 /* Build configuration list for PBXNativeTarget "SlimeJumper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5527D355207BCFDF00C64D77 /* Debug */,
+				5527D356207BCFDF00C64D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5527D357207BCFDF00C64D77 /* Build configuration list for PBXNativeTarget "SlimeJumperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5527D358207BCFDF00C64D77 /* Debug */,
+				5527D359207BCFDF00C64D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5527D35A207BCFDF00C64D77 /* Build configuration list for PBXNativeTarget "SlimeJumperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5527D35B207BCFDF00C64D77 /* Debug */,
+				5527D35C207BCFDF00C64D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5527D31E207BCFDF00C64D77 /* Project object */;
+}
