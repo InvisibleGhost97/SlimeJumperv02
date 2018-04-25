@@ -34,7 +34,7 @@ class EndGame: SKScene {
         scoreLabel.fontColor = SKColor.white
         scoreLabel.position = CGPoint(x: self.size.width/2, y: 300)
         scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
-        scoreLabel.text = "\(GameHandler.sharedInstance.score)"
+        scoreLabel.text = "Score: \(GameHandler.sharedInstance.score)"
         addChild(scoreLabel)
         
         
@@ -43,7 +43,7 @@ class EndGame: SKScene {
         highScoreLabel.fontColor = SKColor.red
         highScoreLabel.position = CGPoint(x: self.size.width/2, y: 450)
         highScoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
-        highScoreLabel.text = "\(GameHandler.sharedInstance.highscore)"
+        highScoreLabel.text = "HighScore: \(GameHandler.sharedInstance.highscore)"
         addChild(highScoreLabel)
         
         let tryAgainLabel = SKLabelNode(fontNamed: "AmericanTypewriter-Bold")
