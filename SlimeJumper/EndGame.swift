@@ -49,7 +49,7 @@ class EndGame: SKScene {
         let tryAgainLabel = SKLabelNode(fontNamed: "AmericanTypewriter-Bold")
         tryAgainLabel.fontSize = 30
         tryAgainLabel.fontColor = SKColor.white
-        tryAgainLabel.position = CGPoint(x: self.size.width/2, y: 50)
+        tryAgainLabel.position = CGPoint(x: self.size.width/2, y:80)
         tryAgainLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
         tryAgainLabel.text = "Tap to Play Again"
         addChild(tryAgainLabel)
