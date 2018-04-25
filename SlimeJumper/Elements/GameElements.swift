@@ -66,7 +66,7 @@ extension GameScene{
         var sprite = SKSpriteNode()
         TextureAtlas = SKTextureAtlas(named: "Slime")
         
-        for i in 0...TextureAtlas.textureNames.count{
+        for i in 0...9{
             let Name = "slime_0\(i).png"
             TextureArray.append(SKTexture(imageNamed: Name))
             
